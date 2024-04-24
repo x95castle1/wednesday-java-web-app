@@ -29,4 +29,4 @@ spec:
     git:
       url: https://github.com/x95castle1/wednesday-java-web-app
       ref:
-        branch: team1
+        branch: team2
