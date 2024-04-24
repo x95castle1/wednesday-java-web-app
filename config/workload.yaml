@@ -1,7 +1,7 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: wednesday-java-web-app
+  name: wednesday-java-web-app-team1
   labels:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
@@ -29,4 +29,4 @@ spec:
     git:
       url: https://github.com/x95castle1/wednesday-java-web-app
       ref:
-        branch: main
+        branch: team1
