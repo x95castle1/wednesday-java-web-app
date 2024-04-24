@@ -1,0 +1,31 @@
+id: 2a28e1b3-0561-4fbf-b004-560c17ce6301
+timestamp: 2023-09-22T19:24:23Z
+username: castleje
+source: VSCODE
+accelerator:
+  name: tanzu-java-web-app
+  source:
+    image: registry.harbor.learn.tapsme.org/tap/tap-packages@sha256:580460d8fb05c229ed34bf348592596b1218540975ac9982666d5fd3f7fcf00e
+fragments:
+  - name: java-version
+    source:
+      image: registry.harbor.learn.tapsme.org/tap/tap-packages@sha256:fa976ccf1609cb69e74a0162f0f49581fd0d393003e2fbe5d54d12eae62b4ff9
+  - name: tap-workload
+    source:
+      image: registry.harbor.learn.tapsme.org/tap/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+  - name: build-wrapper-gradle
+    source:
+      image: registry.harbor.learn.tapsme.org/tap/tap-packages@sha256:5480259d6a29a11f0cc482cd304501d74ccd89dd7207f2d639d6f0d8eedc3bf8
+  - name: build-wrapper-maven
+    source:
+      image: registry.harbor.learn.tapsme.org/tap/tap-packages@sha256:195a3ca6585fa91c41292584a19c2807c72ecdf986ce860a7147451e89d467d4
+options:
+  bsGitBranch: main
+  bsGitRepository: github.com?owner=x95castle1&repo=wednesday-java-web-app
+  buildTool: maven
+  ide: intellij
+  includeBuildToolWrapper: true
+  javaVersion: 11
+  nativeBuild: false
+  projectName: wednesday-java-web-app
+  springBootVersion: 2.7
